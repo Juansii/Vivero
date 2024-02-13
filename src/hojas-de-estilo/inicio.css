@@ -1,0 +1,32 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 40px;
+  margin: 10px;
+}
+
+.image-container { 
+  position: relative;
+}
+
+.image-container img {
+  max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  filter: blur(3px);
+}
+
+
+
+.stock {
+  position: absolute;
+  display: flex;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra completamente */
+  background-color: transparent;
+  color: #dcdada;
+  font-weight: bold;
+  font-size: 80px;
+}

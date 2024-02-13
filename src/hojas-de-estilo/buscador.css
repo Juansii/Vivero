@@ -1,0 +1,19 @@
+.buscador {
+  position: absolute;
+  display: flex;
+  top: 65%;
+  left: 43%;
+  background-color: transparent;
+}
+
+
+button {
+  background-color: rgb(192, 191, 191);
+  color: white;
+  border: none;
+  padding: 8px 16px; /* Ajusta el padding según sea necesario */
+  cursor: pointer;
+  border: 2px #97c983 solid;
+  border-radius: 5px;
+  margin-left: 10px;
+}

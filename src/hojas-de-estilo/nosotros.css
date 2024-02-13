@@ -1,0 +1,19 @@
+.container-nosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  background-color: ;
+}
+
+.container-text { 
+  line-height: 35px;
+  max-width: 80%;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
