@@ -1,19 +1,27 @@
 .container-nosotros {
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding-top: 65px;
-  padding-bottom: 65px;
-  background-color: ;
+  justify-content: center;
+  padding: 10px;
+  padding-top: 45px;
 }
 
-.container-text { 
+p,
+h2,
+i {
+  background-color: #8aa88a;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.container-info {
+  align-items: center;
+  justify-content: center;
   line-height: 35px;
-  max-width: 80%;
+  padding: 25px;
+  height: auto;
 }
 
-h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.container-img {
+  padding: 25px
 }

@@ -1,8 +1,9 @@
 import './App.css';
 import Navbar from './componentes/Navbar';
 import Inicio from './componentes/Inicio';
-import Stock from './componentes/Stock'
-import Accesorios from './componentes/Accesorios';
+import Stock from './componentes/Stock'; 
+import Form from './componentes/Form';
+import Nosotros from './componentes/Nosotros';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Navbar />
       <Inicio /> 
       <Stock /> 
-      <Accesorios /> 
+      <Nosotros /> 
+      <Form /> 
     </div>
   );
 }
