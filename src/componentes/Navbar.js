@@ -6,11 +6,11 @@ function Navbar() {
         <nav className='navigation'>
         <a href=' ' className='page-name'> Verde Balcon </a> 
           <div className='nav-links'> 
-            <a href=' '> Inicio</a>
-            <a href=' '> Nosotros</a>
-            <a href=' '> Preguntas frecuentes</a>
-            <a href=' '> Ubicaciones</a>
-            <a href=' '> Tienda </a>
+            <a href='/'> Inicio</a>
+            <a href='/aboutus'> Nosotros</a>
+            <a href='/questions'> Preguntas frecuentes</a>
+            <a href='/location'> Ubicaciones</a>
+            <a href='/store'> Tienda </a>
           </div>
         </nav>
       </div>
