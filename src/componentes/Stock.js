@@ -25,7 +25,7 @@ function Stock() {
   };
 
   return (
-    <div className='container-stock'>
+    <div className='container-stock' id='stock'>
       <IoIosArrowBack className='arrow' onClick={retrocederImagen} />
       <div className='container-image'>
         {plantas.map((planta, index) => (

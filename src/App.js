@@ -1,19 +1,23 @@
-import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './componentes/Navbar';
-import Inicio from './componentes/Inicio';
-import Stock from './componentes/Stock'; 
-import Form from './componentes/Form';
-import Nosotros from './componentes/Nosotros';
+import Home from './componentes/Home';
+import AboutAs from './componentes/AboutAs';
+import Tienda from './componentes/Tienda';
+import FrequentlyAsked  from './componentes/FrequentlyAsked';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Inicio /> 
-      <Stock /> 
-      <Nosotros /> 
-      <Form /> 
-    </div>
+    <Router>
+      <div>
+        <Navbar />
+        <Switch>
+          <Route path='/' exact component={Home} />
+          <Route path="/about" component={AboutAs} />
+          <Route path="/frequentlyasked" component={FrequentlyAsked} />
+          <Route path="/tienda" component={Tienda} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
