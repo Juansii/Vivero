@@ -4,7 +4,7 @@ import React from 'react';
 function FrequentlyAsked() {
   return (
     <div class='container py-5 text-center'>
-      <h1 class='pb-5'> Las preguntas más frecuentes que nos realizan nuestros clientes </h1>
+      <h1 class='pb-5 text-secondary'> Las preguntas más frecuentes que nos realizan nuestros clientes </h1>
       <div class="accordion" id="accordionExample">
         <div class="accordion-item border-success border-2 mb-5 shadow">
           <h2 class="accordion-header" id="headingOne">
