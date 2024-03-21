@@ -3,6 +3,10 @@ import trabajador from '../imagenes/trabajador-vivero.jpeg';
 import planta from '../imagenes/planta-i1.jpeg';
 import planta2 from '../imagenes/planta-i2.jpeg';
 import planta3 from '../imagenes/planta-i3.jpeg'
+import stock1 from '../imagenes/stock1.jpg'
+import stock2 from '../imagenes/stock2.jpg'
+import stock3 from '../imagenes/stock3.jpg'
+
 import '../hojas-de-estilo/home.css'
 
 function Home() {
@@ -32,48 +36,37 @@ function Home() {
     <div class='container'>
       <div class='row my-5 text-center justify-content-center'>
         <section class='col-12 py-5'>
-          <div class='carousel slide' id='slide-img' data-bs-ride='carousel'>
-            <div class='carousel-inner'>
-              <div class='carousel-item active'>
-                <img src={planta} class='d-block w-100 h-100' alt='planta n1' />
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src={planta} class="d-block mx-auto img-fluid" alt="plant1" />
               </div>
-              <div class='carousel-item'>
-                <img src={planta2} class='d-block w-100 h-100' alt='planta n2' />
+              <div class="carousel-item">
+                <img src={planta2} class="d-block w-100 img-fluid" alt="plant2" />
               </div>
-              <div class='carousel-item'>
-                <img src={planta3} class='d-block w-100 h-100' alt='planta n3' />
+              <div class="carousel-item">
+                <img src={planta3} class="d-block w-100 img-fluid" alt="plant3" />
               </div>
             </div>
-            <a href='#slide-img'
-              class='carousel-control-prev'
-              role='button'
-              data-bs-slide='prev'
-            >
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
-            </a>
-            <a href='#slide-img'
-              class='carousel-control-next'
-              role='button'
-              data-bs-slide='next'
-            >
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
-            </a>
-
+            </button>
           </div>
         </section>
 
 
-
-
-        <section class='col-12 py-5 mb-4'>
+        <section class='col-12 py-5 mb-4 bg-light bg-gradient'>
           <div class='row'>
-            <div class='col-lg-6 d-flex align-items-center'>
-              <div>
-                <h2><i>Sobre Nosotros</i></h2>
+            <div class='col-lg-6 d-flex align-items-center bg-'>
+              <div class='bg-secundary'>
+                <h2 class='pb-5'><i>Sobre Nosotros</i></h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus convallis fringilla sapien, nec feugiat dolor commodo ut. In hac habitasse platea dictumst. Vivamus aliquet velit ut lacus suscipit, ut sollicitudin velit suscipit. Sed ultricies orci sed risus accumsan, a laoreet ipsum molestie. Integer fringilla velit in est tempor, eget dapibus ipsum vulputate. Sed non malesuada lorem. Sed vestibulum metus eget mi dictum, a vehicula dui volutpat. Integer varius nisi nec eros suscipit ultricies. Integer scelerisque leo id nulla feugiat, vitae fringilla purus consectetur. Quisque nec nunc sed sapien varius condimentum. 
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus convallis fringilla sapien, nec feugiat dolor commodo ut. In hac habitasse platea dictumst. Vivamus aliquet velit ut lacus suscipit, ut sollicitudin velit suscipit. Sed ultricies orci sed risus accumsan, a laoreet ipsum molestie. Integer fringilla velit in est tempor, eget dapibus ipsum vulputate. Sed non malesuada lorem. Sed vestibulum metus eget mi dictum, a vehicula dui volutpat. Integer varius nisi nec eros suscipit ultricies. Integer scelerisque leo id nulla feugiat, vitae fringilla purus consectetur. Quisque nec nunc sed sapien varius condimentum.
                 </p>
               </div>
             </div>
@@ -86,6 +79,50 @@ function Home() {
             </div>
           </div>
         </section>
+
+
+        <section class='col-12 py-5 mb-4 bg-light'>
+          <h3 class='text-center'>Algunos de nuestros productos</h3>
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src={stock1} class="d-block mx-auto img-fluid" alt="producto-en-stock" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class='text-dark bg-light'>PLANTAS DE INTERIOR</h5>
+                  <p class='text-dark bg-light'>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src={stock2} class="d-block mx-auto img-fluid" alt="producto-en-stock" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class='text-dark bg-light'>FERTILIZANTES</h5>
+                  <p class='text-dark bg-light'>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src={stock3} class="d-block mx-auto img-fluid" alt="producto-en-stock" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class='text-dark bg-light'>MACETAS</h5>
+                  <p class='text-dark bg-light'>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+
 
         <section class='custom-bg-color text-secondary'>
           <div class="container py-5">
@@ -116,9 +153,6 @@ function Home() {
             </div>
           </div>
         </section>
-
-
-
       </div>
     </div>
   );
