@@ -42,10 +42,10 @@ function Home() {
                 <img src={planta} class="d-block mx-auto img-fluid" alt="plant1" />
               </div>
               <div class="carousel-item">
-                <img src={planta2} class="d-block w-100 img-fluid" alt="plant2" />
+                <img src={planta2} class="d-block mx-auto img-fluid" alt="plant2" />
               </div>
               <div class="carousel-item">
-                <img src={planta3} class="d-block w-100 img-fluid" alt="plant3" />
+                <img src={planta3} class="d-block mx-auto img-fluid" alt="plant3" />
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
