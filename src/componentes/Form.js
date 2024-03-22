@@ -25,7 +25,7 @@ function Form() {
   return (
     <div className='main-container-form' id='contacto'>
       <div className='contact'>
-        <h1> Contáctenos </h1>
+        <h1> Tenes alguna consulta? Contáctenos! </h1>
         <h3> Nueva Córdoba, Córdoba Capital, Argentina. </h3>
         <h4> contacto@verdebalcon.com</h4>
         <h4> +54 123-456-7890 </h4>

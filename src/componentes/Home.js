@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import trabajador from '../imagenes/trabajador-vivero.jpeg';
 import planta from '../imagenes/planta-i1.jpeg';
 import planta2 from '../imagenes/planta-i2.jpeg';
@@ -10,6 +10,17 @@ import stock3 from '../imagenes/stock3.jpg'
 import '../hojas-de-estilo/home.css'
 
 function Home() {
+
+  const [titulo, setTitulo] = useState('Algunos de nuestros productos: ');
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setTitulo('¡Explora nuestra colección!');
+    }, 3000);
+
+    return () => clearTimeout(timeout);
+  }, []);
+  
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -30,6 +41,8 @@ function Home() {
       email: '',
       telephone: ''
     });
+
+    
   };
 
   return (
@@ -82,7 +95,7 @@ function Home() {
 
 
         <section class='col-12 py-5 mb-4 bg-light'>
-          <h3 class='text-center'>Algunos de nuestros productos</h3>
+        <h3 class='text-center py-5' onClick={() => setTitulo('¡Explora nuestra colección!')}>{titulo}</h3>
           <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -91,21 +104,21 @@ function Home() {
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src={stock1} class="d-block mx-auto img-fluid" alt="producto-en-stock" />
+                <img src={stock1} class="d-block mx-auto img-fluid img-thumbnail w-50" alt="producto-en-stock" />
                 <div class="carousel-caption d-none d-md-block">
                   <h5 class='text-dark bg-light'>PLANTAS DE INTERIOR</h5>
                   <p class='text-dark bg-light'>Some representative placeholder content for the first slide.</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src={stock2} class="d-block mx-auto img-fluid" alt="producto-en-stock" />
+                <img src={stock2} class="d-block mx-auto img-fluid img-thumbnail w-50" alt="producto-en-stock" />
                 <div class="carousel-caption d-none d-md-block">
                   <h5 class='text-dark bg-light'>FERTILIZANTES</h5>
                   <p class='text-dark bg-light'>Some representative placeholder content for the second slide.</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src={stock3} class="d-block mx-auto img-fluid" alt="producto-en-stock" />
+                <img src={stock3} class="d-block mx-auto img-fluid img-thumbnail w-50" alt="producto-en-stock" />
                 <div class="carousel-caption d-none d-md-block">
                   <h5 class='text-dark bg-light'>MACETAS</h5>
                   <p class='text-dark bg-light'>Some representative placeholder content for the third slide.</p>
@@ -122,6 +135,7 @@ function Home() {
             </button>
           </div>
         </section>
+
 
 
         <section class='custom-bg-color text-secondary'>
